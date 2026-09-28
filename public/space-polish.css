@@ -1,0 +1,43 @@
+/* Subtle orbital atmosphere. Creature details remain in the sprite artwork. */
+.summoning-stage {
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 50% 72%, #793bd329, transparent 60%),
+    radial-gradient(ellipse at 42% 38%, #18a5ed1c, transparent 65%);
+}
+
+.summoning-stage::before {
+  content: "";
+  position: absolute;
+  inset: 3% 2% 9%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 22%, #d3f5ff 0 1px, transparent 2px),
+    radial-gradient(circle at 82% 18%, #b8caff 0 1px, transparent 2px),
+    radial-gradient(circle at 24% 65%, #89e3ff 0 1px, transparent 2px),
+    radial-gradient(circle at 88% 58%, #e7cbff 0 1px, transparent 2px),
+    radial-gradient(circle at 63% 8%, #e8faff 0 1px, transparent 2px);
+  opacity: .85;
+}
+
+.summoning-stage::after {
+  content: "";
+  position: absolute;
+  left: 17%;
+  right: 17%;
+  bottom: 5%;
+  height: 13%;
+  border: 1px solid #88dfff99;
+  border-radius: 50%;
+  box-shadow: 0 0 18px #31c9ff40, inset 0 0 14px #9568f530;
+  transform: rotate(-8deg);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.planet-label {
+  color: #d3f4ff;
+  letter-spacing: .6px;
+  text-shadow: 0 0 12px #35b7ee, 0 2px 4px #001631;
+}
