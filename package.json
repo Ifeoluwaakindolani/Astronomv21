@@ -1,0 +1,12 @@
+{
+  "name": "astromon",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A space creature RPG with level-matched trainers and friend battles",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/game.test.mjs test/trainers.test.mjs"
+  },
+  "engines": { "node": ">=24" }
+}
